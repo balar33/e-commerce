@@ -1,0 +1,436 @@
+.header {
+  display: block;
+}
+
+.header-top {
+  background-color: #f4f6f6;
+}
+
+.header-top-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-top-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-top-info .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 24px;
+}
+
+.header-top-info .email .text {
+  margin-left: 8px;
+}
+
+.header-top-info .email .text span {
+  font-size: 14px;
+  color: #989BA7;
+  line-height: 1.3;
+}
+
+.header-top-info .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 24px;
+  position: relative;
+}
+
+.header-top-info .cta .text {
+  margin-left: 8px;
+}
+
+.header-top-info .cta .text span {
+  font-size: 14px;
+  color: #989BA7;
+  line-height: 1.3;
+}
+
+.header-top-info .cta::before {
+  width: 1px;
+  background-color: rgba(26, 34, 36, 0.12);
+  height: 19px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-bottom {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.header-bottom .main-menu {
+  padding-left: 50px;
+}
+
+.header-bottom .main-menu li {
+  padding-right: 22px;
+  position: relative;
+}
+
+.header-bottom .main-menu li:last-child {
+  padding-right: 0;
+}
+
+.header-bottom .main-menu li a {
+  color: #989BA7;
+  font-size: 14px;
+  padding: 10px 0;
+  font-weight: 500;
+  line-height: 1.2;
+  display: block;
+}
+
+.header-bottom .main-menu li a.active {
+  color: #1A2224;
+}
+
+.header-bottom .main-menu li .sub-menu {
+  position: absolute;
+  left: 0;
+  width: 180px;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background: white;
+  border-radius: 4px;
+  border-top: 4px solid #1A2224;
+  z-index: 999;
+}
+
+.header-bottom .main-menu li .sub-menu li {
+  padding: 5px 0;
+}
+
+.header-bottom .main-menu li .sub-menu li a {
+  padding: 5px 20px;
+  display: block;
+  color: #989BA7;
+  font-size: 14px;
+  line-height: 1.3;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-bottom .main-menu li .sub-menu li a:hover {
+  color: #1A2224;
+}
+
+.header-bottom .main-menu li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 120%;
+}
+
+.header-bottom .search-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 406px;
+  position: relative;
+  font-size: 14px;
+}
+
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-menu {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.header-bottom .search-bar input {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  border: 1px solid #989BA7;
+  border-radius: 50px;
+  padding: 0 19px;
+}
+
+.header-bottom .search-bar .icon {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.header-bottom .menu-icon ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-bottom .menu-icon ul li {
+  padding-left: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-bottom .menu-icon ul li .heart,
+.header-bottom .menu-icon ul li .cart {
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  top: -4px;
+  right: -8px;
+  background-color: #335AFF;
+  width: 18px;
+  height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.header-bottom aside .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FCFCFC;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 70px;
+  z-index: 12;
+}
+
+.header-bottom aside .sidenav li {
+  margin-bottom: 5px;
+  padding: 0px 0px 0px 30px;
+  position: relative;
+}
+
+.header-bottom aside .sidenav li a {
+  color: #989BA7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header-bottom aside .sidenav li a:hover {
+  color: #1A2224;
+}
+
+.header-bottom aside .sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  left: 33px;
+  font-size: 40px;
+  color: #1A2224;
+}
+
+.header-bottom .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  left: 0;
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.header-bottom .active {
+  opacity: 1;
+  display: block;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header-bottom .main-menu {
+    padding-left: 20px;
+  }
+
+  .header-bottom .main-menu li {
+    padding-right: 20px;
+  }
+
+  .header-bottom .search-bar {
+    min-width: 300px;
+    margin-left: 20px;
+  }
+
+  .header-bottom .search-bar input {
+    height: 50px;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-top-info .email {
+    padding-right: 18px;
+  }
+
+  .header-top-info .email .text span {
+    font-size: 12px;
+  }
+
+  .header-top-info .cta {
+    padding-left: 18px;
+  }
+
+  .header-top-info .cta .text span {
+    font-size: 12px;
+  }
+
+  .header-bottom aside .search-bar {
+    min-width: 300px;
+    margin-left: 0;
+  }
+
+  .header-bottom aside .search-bar input {
+    height: 45px;
+  }
+
+  .header-bottom aside .sidenav .search-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .header-top-wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .header-top-info {
+    padding-bottom: 5px;
+  }
+
+  .header-bottom {
+    padding: 15px 0;
+  }
+
+  .header-bottom aside .search-bar {
+    display: none;
+  }
+
+  .header-bottom aside .menu-icon {
+    margin-left: auto;
+  }
+
+  .header-bottom aside .hamburger-menu {
+    margin-left: 30px;
+  }
+
+  .header-bottom aside .sidenav .search-bar {
+    display: block;
+    min-width: 300px;
+    margin-left: 0;
+    margin: 15px 30px;
+  }
+
+  .header-bottom aside .sidenav .search-bar input {
+    height: 45px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .header-top-wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .header-top-info {
+    padding-bottom: 5px;
+  }
+
+  .header-bottom {
+    padding: 15px 0;
+  }
+
+  .header-bottom aside .search-bar {
+    display: none;
+  }
+
+  .header-bottom aside .menu-icon {
+    margin-left: auto;
+  }
+
+  .header-bottom aside .hamburger-menu {
+    margin-left: 30px;
+  }
+
+  .header-bottom aside .sidenav .search-bar {
+    display: block;
+    min-width: 300px;
+    margin-left: 0;
+    margin: 15px 30px;
+  }
+
+  .header-bottom aside .sidenav .search-bar input {
+    height: 45px;
+  }
+}

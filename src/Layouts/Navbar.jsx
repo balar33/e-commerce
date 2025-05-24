@@ -1,141 +1,354 @@
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo.png";
+import "./layouts.css";
 
 export const Navbar = () => {
   return (
-    <>
-      <header>
-        <div class="container-fluid">
-          <div class="row py-3 border-bottom">
-            <div class="col-sm-4 col-lg-3 text-center text-sm-start">
-              <div class="main-logo">
-                <a href="index.html">
-                  <img src={logo} alt="logo" class="img-fluid" />
-                </a>
+    <div class="header-bottom">
+      <div class="container-fluid">
+        <div class="d-none d-lg-block">
+          <nav class="menu-area d-flex align-items-center justify-content-between">
+            <div class="logo">
+              <a href="#">
+                <img src={logo} alt="logo" class="img-fluid" />
+              </a>
+            </div>
+            <div class="search-bar">
+              <input type="text" placeholder="Search for product..." />
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20.414"
+                  height="20.414"
+                  viewBox="0 0 20.414 20.414"
+                >
+                  <g
+                    id="Search_Icon"
+                    data-name="Search Icon"
+                    transform="translate(1 1)"
+                  >
+                    <ellipse
+                      id="Ellipse_1"
+                      data-name="Ellipse 1"
+                      cx="8.158"
+                      cy="8"
+                      rx="8.158"
+                      ry="8"
+                      fill="none"
+                      stroke="#1a2224"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_4"
+                      data-name="Line 4"
+                      x1="3.569"
+                      y1="3.5"
+                      transform="translate(14.431 14.5)"
+                      fill="none"
+                      stroke="#1a2224"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </g>
+                </svg>
               </div>
             </div>
-            <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
-              <div class="search-bar row bg-light p-2 my-2 rounded-4">
-                <div class="col-md-4 d-none d-md-block">
-                  <select class="form-select border-0 bg-transparent">
-                    <option>All Categories</option>
-                    <option>Groceries</option>
-                    <option>Drinks</option>
-                    <option>Chocolates</option>
-                  </select>
-                </div>
-                <div class="col-11 col-md-7">
-                  <form id="search-form" class="text-center" action="index.html" method="post">
-                    <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" />
-                  </form>
-                </div>
-                <div class="col-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" /></svg>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
-              <div class="support-box text-end d-none d-xl-block">
-                <span class="fs-6 text-muted">For Support?</span>
-                <h5 class="mb-0">+980-34984089</h5>
-              </div>
-
-              <ul class="d-flex justify-content-end list-unstyled m-0">
+            <div class="menu-icon ">
+              <ul className="d-flex justify-content-end list-unstyled m-0">
                 <li>
-                  <a href="#" class="rounded-circle bg-light p-2 mx-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24"><use></use></svg>
+                  <a href="wishlist.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="20"
+                      viewBox="0 0 22 20"
+                    >
+                      <g id="Heart" transform="translate(1 1)">
+                        <path
+                          id="Heart-2"
+                          data-name="Heart"
+                          d="M20.007,4.59a5.148,5.148,0,0,0-7.444,0L11.548,5.636,10.534,4.59a5.149,5.149,0,0,0-7.444,0,5.555,5.555,0,0,0,0,7.681L4.1,13.317,11.548,21l7.444-7.681,1.014-1.047a5.553,5.553,0,0,0,0-7.681Z"
+                          transform="translate(-1.549 -2.998)"
+                          fill="#fff"
+                          stroke="#1a2224"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                    <span class="heart">3</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="rounded-circle bg-light p-2 mx-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24"><use href="#heart"></use></svg>
+                  <a href="cart.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                    >
+                      <g id="Icon" transform="translate(-1524 -89)">
+                        <ellipse
+                          id="Ellipse_2"
+                          data-name="Ellipse 2"
+                          cx="0.909"
+                          cy="0.952"
+                          rx="0.909"
+                          ry="0.952"
+                          transform="translate(1531.364 108.095)"
+                          fill="none"
+                          stroke="#1a2224"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                        <ellipse
+                          id="Ellipse_3"
+                          data-name="Ellipse 3"
+                          cx="0.909"
+                          cy="0.952"
+                          rx="0.909"
+                          ry="0.952"
+                          transform="translate(1541.364 108.095)"
+                          fill="none"
+                          stroke="#1a2224"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                        <path
+                          id="Path_3"
+                          data-name="Path 3"
+                          d="M1,1H4.636L7.073,13.752a1.84,1.84,0,0,0,1.818,1.533h8.836a1.84,1.84,0,0,0,1.818-1.533L21,5.762H5.545"
+                          transform="translate(1524 89)"
+                          fill="none"
+                          stroke="#1a2224"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                    <span class="cart">3</span>
                   </a>
                 </li>
-                <li class="d-lg-none">
-                  <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                    <svg width="24" height="24" viewBox="0 0 24 24"><use href="#cart"></use></svg>
-                  </a>
-                </li>
-                <li class="d-lg-none">
-                  <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
-                    <svg width="24" height="24" viewBox="0 0 24 24"><use href="#search"></use></svg>
+                <li>
+                  <a href="account.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="20"
+                      viewBox="0 0 18 20"
+                    >
+                      <g id="Account" transform="translate(1 1)">
+                        <path
+                          id="Path_86"
+                          data-name="Path 86"
+                          d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2"
+                          transform="translate(-4 -3)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                        <circle
+                          id="Ellipse_9"
+                          data-name="Ellipse 9"
+                          cx="4"
+                          cy="4"
+                          r="4"
+                          transform="translate(4)"
+                          fill="#fff"
+                          stroke="#000"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
                   </a>
                 </li>
               </ul>
-              <div class="cart text-end d-none d-lg-block dropdown">
-                <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                  <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
-                  <span class="cart-total fs-5 fw-bold">$1290.00</span>
-                </button>
+            </div>
+          </nav>
+        </div>
+        {/* <!-- Mobile Menu --> */}
+        <aside class="d-lg-none">
+          <div class="mobile-nav d-flex align-items-center justify-content-between">
+            <div class="logo">
+              <a href="#">
+                <img src={logo} alt="logo" />
+              </a>
+            </div>
+            <div class="search-bar">
+              <input type="text" placeholder="Search for product..." />
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20.414"
+                  height="20.414"
+                  viewBox="0 0 20.414 20.414"
+                >
+                  <g
+                    id="Search_Icon"
+                    data-name="Search Icon"
+                    transform="translate(1 1)"
+                  >
+                    <ellipse
+                      id="Ellipse_1"
+                      data-name="Ellipse 1"
+                      cx="8.158"
+                      cy="8"
+                      rx="8.158"
+                      ry="8"
+                      fill="none"
+                      stroke="#1a2224"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_4"
+                      data-name="Line 4"
+                      x1="3.569"
+                      y1="3.5"
+                      transform="translate(14.431 14.5)"
+                      fill="none"
+                      stroke="#1a2224"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </g>
+                </svg>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row py-3">
-            <div class="d-flex  justify-content-center justify-content-sm-between align-items-center">
-              <nav class="main-menu d-flex navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                  aria-controls="offcanvasNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header justify-content-center">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <select class="filter-categories border-0 mb-0 me-5">
-                      <option>Shop by Departments</option>
-                      <option>Groceries</option>
-                      <option>Drinks</option>
-                      <option>Chocolates</option>
-                    </select>
-                    <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
-                      <li class="nav-item active">
-                        <a href="#women" class="nav-link">Women</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a href="#men" class="nav-link">Men</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#kids" class="nav-link">Kids</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#accessories" class="nav-link">Accessories</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                        <ul class="dropdown-menu" aria-labelledby="pages">
-                          <li><a href="index.html" class="dropdown-item">About Us </a></li>
-                          <li><a href="index.html" class="dropdown-item">Shop </a></li>
-                          <li><a href="index.html" class="dropdown-item">Single Product </a></li>
-                          <li><a href="index.html" class="dropdown-item">Cart </a></li>
-                          <li><a href="index.html" class="dropdown-item">Checkout </a></li>
-                          <li><a href="index.html" class="dropdown-item">Blog </a></li>
-                          <li><a href="index.html" class="dropdown-item">Single Post </a></li>
-                          <li><a href="index.html" class="dropdown-item">Styles </a></li>
-                          <li><a href="index.html" class="dropdown-item">Contact </a></li>
-                          <li><a href="index.html" class="dropdown-item">Thank You </a></li>
-                          <li><a href="index.html" class="dropdown-item">My Account </a></li>
-                          <li><a href="index.html" class="dropdown-item">404 Error </a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#brand" class="nav-link">Brand</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#sale" class="nav-link">Sale</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+            <div class="menu-icon">
+              <ul className="d-flex justify-content-end list-unstyled m-0">
+                <li>
+                  <a href="wishlist.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="20"
+                      viewBox="0 0 22 20"
+                    >
+                      <g id="Heart" transform="translate(1 1)">
+                        <path
+                          id="Heart-2"
+                          data-name="Heart"
+                          d="M20.007,4.59a5.148,5.148,0,0,0-7.444,0L11.548,5.636,10.534,4.59a5.149,5.149,0,0,0-7.444,0,5.555,5.555,0,0,0,0,7.681L4.1,13.317,11.548,21l7.444-7.681,1.014-1.047a5.553,5.553,0,0,0,0-7.681Z"
+                          transform="translate(-1.549 -2.998)"
+                          fill="#fff"
+                          stroke="#1a2224"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                    <span class="heart">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="cart.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                    >
+                      <g id="Icon" transform="translate(-1524 -89)">
+                        <ellipse
+                          id="Ellipse_2"
+                          data-name="Ellipse 2"
+                          cx="0.909"
+                          cy="0.952"
+                          rx="0.909"
+                          ry="0.952"
+                          transform="translate(1531.364 108.095)"
+                          fill="none"
+                          stroke="#1a2224"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                        <ellipse
+                          id="Ellipse_3"
+                          data-name="Ellipse 3"
+                          cx="0.909"
+                          cy="0.952"
+                          rx="0.909"
+                          ry="0.952"
+                          transform="translate(1541.364 108.095)"
+                          fill="none"
+                          stroke="#1a2224"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                        <path
+                          id="Path_3"
+                          data-name="Path 3"
+                          d="M1,1H4.636L7.073,13.752a1.84,1.84,0,0,0,1.818,1.533h8.836a1.84,1.84,0,0,0,1.818-1.533L21,5.762H5.545"
+                          transform="translate(1524 89)"
+                          fill="none"
+                          stroke="#1a2224"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                    <span class="cart">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="account.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="20"
+                      viewBox="0 0 18 20"
+                    >
+                      <g id="Account" transform="translate(1 1)">
+                        <path
+                          id="Path_86"
+                          data-name="Path 86"
+                          d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2"
+                          transform="translate(-4 -3)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                        <circle
+                          id="Ellipse_9"
+                          data-name="Ellipse 9"
+                          cx="4"
+                          cy="4"
+                          r="4"
+                          transform="translate(4)"
+                          fill="#fff"
+                          stroke="#000"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </header>
-    </>
-  )
-}
+        </aside>
+      </div>
+    </div>
+  );
+};
